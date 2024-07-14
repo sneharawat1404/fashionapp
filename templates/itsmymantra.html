@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Its My Mantra</title>
+    <style>
+        #WideImg {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+          }
+        body {
+            font-family: Bookman, URW Bookman L, serif;
+            /* margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column; */
+            align-items: center;
+            text-align: center;
+            background-color: #FFEDF1;
+        }
+
+        
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #FFB6C1;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #FFB6C1;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+            font-size: 16px;
+        }
+
+        .icons a {
+            margin-left: 20px;
+            display: inline-block;
+        }
+
+        .icons img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .banner {
+            padding-top: 100px; /* Padding-top adjusted for fixed header */
+            text-align: center;
+            /* background-color: #FDB0C0; */
+            padding-bottom: 20px;
+        }
+
+        .banner img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .form-section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        form {
+            display: inline-block;
+            text-align: left;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        select, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #FAA0A0;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .typing-container {
+            position: relative;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .typing {
+            display: inline-block;
+            padding: 20px;
+            font-size: 24px; /* Adjusted to h2 size */
+            color: #FF69B4;
+            animation: typing 3s steps(20, end), colorChange 3s ease-in-out infinite;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 8px;
+            height: 24px; /* Adjusted to match the font size */
+            background-color: rgb(216, 0, 240);
+            animation: blink 0.7s infinite;
+        }
+
+        @keyframes typing {
+            0% {
+                width: 0;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+
+        @keyframes colorChange {
+            0%,
+            100% {
+                color: rgba(255, 0, 212, 0.897);
+            }
+
+            50% {
+                color: rgba(255, 5, 155, 0.897);
+            }
+        }
+
+        @keyframes blink {
+            0%,
+            100% {
+                background-color: transparent;
+            }
+
+            50% {
+                background-color: rgb(0, 0, 0);
+            }
+        }
+
+        @media (max-width: 700px) {
+            .typing {
+                font-size: 20px; /* Adjusted to smaller size */
+            }
+
+            .cursor {
+                height: 20px; /* Adjusted to match the font size */
+            }
+        }
+
+        @media (max-width: 400px) {
+            .typing {
+                font-size: 16px; /* Adjusted to smaller size */
+            }
+
+            .cursor {
+                height: 16px; /* Adjusted to match the font size */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Its My Mantra</div>
+        <nav>
+            <ul>
+                <li><a href="#">Myntrafwd</a></li>
+                <li><a href="#">Tops</a></li>
+                <li><a href="#">Bottoms</a></li>
+                <li><a href="#">Ethnic wear</a></li>
+                <li><a href="#">Bestsellers</a></li>
+                <li><a href="#">Celeb Inspires</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <a href="#"><img src="static/shopping-cart.png" alt="Cart"></a>
+            <a href="#"><img src="static/searchicon.jpg" alt="Search"></a>
+        </div>
+    </header>
+    <div class="banner">
+        <img id="WideImg" src="static/Screenshot 2024-07-15 010944.png" alt="Banner">
+    </div>
+    <main>
+        <div class="typing-container">
+            <div class="typing">
+                <span id="text"></span>
+                <div class="cursor"></div>
+            </div>
+        </div>
+        <section class="form-section">
+            <form action="/submit" method="POST">
+                <label for="tone">Under Tone</label>
+                <select id="tone" name="tone">
+                    <option value="Warm">Warm</option>
+                    <option value="Cool">Cool</option>
+                </select>
+                <label for="body_type">Body Type</label>
+                <select id="body_type" name="body_type">
+                    <option value="Oval">Oval</option>
+                    <option value="Pear">Pear</option>
+                    <option value="Hourglass">Hourglass</option>
+                </select>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <script>
+        let textdata = ["ssshhhh! Its Your Mantra","Select your Type Below", "Your Fashion OG!"];
+
+        let ref = document.getElementById("text");
+        let cur = document.querySelector(".cursor");
+        let ind = 0;
+        let cInd = 0;
+        let remove = false;
+
+        function textTypeFunction() {
+            if (ind < textdata.length) {
+                let currentText = textdata[ind];
+                if (!remove && cInd < currentText.length) {
+                    ref.textContent += currentText.charAt(cInd);
+                    cInd++;
+                    setTimeout(textTypeFunction, 100);
+                } else if (remove && cInd >= 0) {
+                    ref.textContent = currentText.substring(0, cInd);
+                    cInd--;
+                    setTimeout(textTypeFunction, 100);
+                } else {
+                    remove = !remove;
+                    if (!remove) {
+                        ind++;
+                        if (ind >= textdata.length) {
+                            ind = 0;
+                        }
+                    }
+                    setTimeout(textTypeFunction, 1000);
+                }
+            }
+        }
+
+        textTypeFunction();
+    </script>
+</body>
+</html>

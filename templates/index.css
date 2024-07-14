@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* header {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+} */
+
+.sub {
+  color: black;
+}
+
+.geeks-title {
+  color: green;
+  font-size: 24px; /* Adjusted to h2 size */
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.typing-title {
+  font-size: 24px; /* Adjusted to h2 size */
+  margin: 10px 0;
+  color: green;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.typing {
+  display: inline-block;
+  padding: 20px;
+  font-size: 24px; /* Adjusted to h2 size */
+  color: rgba(225, 0, 255, 0.897);
+  animation: typing 3s steps(20, end), colorChange 3s ease-in-out infinite;
+}
+
+.cursor {
+  display: inline-block;
+  width: 8px;
+  height: 24px; /* Adjusted to match the font size */
+  background-color: rgb(216, 0, 240);
+  animation: blink 0.7s infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes colorChange {
+  0%,
+  100% {
+    color: rgba(255, 0, 212, 0.897);
+  }
+
+  50% {
+    color: rgba(255, 5, 155, 0.897);
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    background-color: transparent;
+  }
+
+  50% {
+    background-color: rgb(0, 0, 0);
+  }
+}
+
+/* Media query for screens with 
+a max width of 400px */
+@media (max-width: 700px) {
+  .geeks-title {
+    font-size: 20px; /* Adjusted to smaller size */
+  }
+
+  .typing-title {
+    font-size: 20px; /* Adjusted to smaller size */
+  }
+
+  .typing {
+    font-size: 20px; /* Adjusted to smaller size */
+  }
+
+  .cursor {
+    height: 20px; /* Adjusted to match the font size */
+  }
+}
+
+@media (max-width: 400px) {
+  .geeks-title {
+    font-size: 18px; /* Adjusted to smaller size */
+  }
+
+  .typing-title {
+    font-size: 16px; /* Adjusted to smaller size */
+  }
+
+  .typing {
+    font-size: 16px; /* Adjusted to smaller size */
+  }
+
+  .cursor {
+    height: 16px; /* Adjusted to match the font size */
+  }
+}
