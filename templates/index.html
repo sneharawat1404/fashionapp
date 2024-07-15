@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Its My Mantra</title>
+    <!-- <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="style2.css" /> -->
+    <!-- Link to the merged style.css -->
+   
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #111;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ddd;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content .column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+.dropdown-content .column h3 {
+  margin: 0;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #aa336a;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+.hero-content h1 {
+  font-size: 2.5em;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+}
+
+.hero-content button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.hero-content button:hover {
+  background-color: #555;
+}
+
+/* CSS from style.css (index.html) */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  background: rgb(13, 13, 13);
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: #fff;
+}
+
+.blogs-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.blogs-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.3rem;
+  justify-content: center;
+  padding: 0.3rem;
+  width: 260px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: #fff;
+  margin: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.blogs-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 10px 8px 30px rgb(0 0 0 / 30%);
+}
+
+.blog-image {
+  overflow: hidden;
+  border-radius: 0.3rem;
+}
+
+.blog-image:hover img {
+  transition: all 0.3s;
+  transform: scale(1.1);
+  border-radius: 0.3rem;
+}
+
+.blog-image img {
+  width: 100%;
+  background-size: contain;
+  border-radius: 0.3rem;
+}
+
+.about-author img {
+  width: 20%;
+}
+
+.description {
+  font-size: 0.75rem;
+}
+
+.blog-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.7rem;
+  margin-top: 1rem;
+}
+
+.about-author {
+  display: flex;
+  align-items: center;
+  font-size: 0.6rem;
+  position: relative;
+  bottom: 0;
+  left: -0.8rem;
+}
+
+.about-author span {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 551px) {
+  .blogs-container {
+    justify-content: center;
+  }
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  background: rgb(13, 13, 13);
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: #fff;
+}
+
+.blogs-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.blogs-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.3rem;
+  justify-content: center;
+  padding: 0.3rem;
+  width: 260px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: #fff;
+  margin: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.blogs-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 10px 8px 30px rgb(0 0 0 / 30%);
+}
+
+.blog-image {
+  overflow: hidden;
+  border-radius: 0.3rem;
+}
+
+.blog-image:hover img {
+  transition: all 0.3s;
+  transform: scale(1.1);
+  border-radius: 0.3rem;
+}
+
+.blog-image img {
+  width: 100%;
+  background-size: contain;
+  border-radius: 0.3rem;
+}
+
+.about-author img {
+  width: 20%;
+}
+
+.description {
+  font-size: 0.75rem;
+}
+
+.blog-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.7rem;
+  margin-top: 1rem;
+}
+
+.about-author {
+  display: flex;
+  align-items: center;
+  font-size: 0.6rem;
+  position: relative;
+  bottom: 0;
+  left: -0.8rem;
+}
+
+.about-author span {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 551px) {
+  .blogs-container {
+    justify-content: center;
+  }
+}
+</style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">MyntraFwd</a>
+            <div class="dropdown-content">
+              <div class="column">
+                <h3>Gen-Z collection</h3>
+                <a href="#">transformative lip tint</a>
+                <a href="#">supple kiss lip glaze</a>
+                <a href="#">powder blush stick</a>
+                <a href="#">wisp lash mascara </a>
+                <a href="#">lakme foundation </a>
+              </div>
+              <div class="column">
+                <h3>Best sellers</h3>
+                <a href="#">lip kits</a>
+                <a href="#">lip glosses</a>
+                <a href="#">blushes</a>
+              </div>
+              <!-- Add more columns as needed -->
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Makeup & Skin</a>
+            <div class="dropdown-content">
+              <div class="column">
+                <h3>new</h3>
+                <a href="#">lip butter</a>
+                <a href="#">vanilla bath collection</a>
+              </div>
+              <div class="column">
+                <h3>best sellers</h3>
+                <a href="#">sunscreen</a>
+                <a href="#">cleansers</a>
+              </div>
+              <!-- Add more columns as needed -->
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Gen-Z collection</a>
+            <div class="dropdown-content">
+              <div class="column">
+                <h3>new</h3>
+                <a href="#">formal</a>
+                <a href="#">casual</a>
+              </div>
+              <div class="column">
+                <h3>best sellers</h3>
+                <a href="#">chikankari suits</a>
+                <a href="#">skirts</a>
+              </div>
+              <!-- Add more columns as needed -->
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <img
+          src="static/WhatsApp Image 2024-07-15 at 8.59.36 PM.jpeg"
+          alt="Kylie Cosmetics"
+        />
+        <div class="hero-content">
+          <h1 align="center">
+            Your Fashion OG Here! <br />Find the Perfect Fit for Your Beautiful
+            Body
+          </h1>
+          <p align="center">
+            Why blend in when you were born to stand out?</p>
+            <p>Discover the perfect shades and styles that complement your unique
+            tone.</p> 
+          </p>
+           <a href="/itsmymantra"><button>Its My Mantra</button></a>
+        </div>
+      </section>
+    </main>
+
+    <!-- New content from index.html (second part) -->
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <h3>BEAUTY PRODUCTS</h3>
+    </nav>
+    <!-- Blog section -->
+    <section class="blogs-container">
+      <!-- Blog Item 1 -->
+      <div class="blogs-item">
+        <div class="blog-image">
+          <img src="static/WhatsApp Image 2024-07-15 at 8.59.35 PM (1).jpeg" alt="blog-image" />
+        </div>
+        <p class="description">
+          Innisfree hydration serum, increases hair growth and helps in reducing
+          damage cells in scalp.
+        </p>
+        <div class="content">
+          <div class="blog-details">
+            <p class="tag"><span> </span></p>
+            <p></p>
+          </div>
+          <div class="about-author">
+            <!--<img src="./author.jpeg" alt="author">-->
+            <p><span> </span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog Item 2 -->
+      <div class="blogs-item">
+        <div class="blog-image">
+          <img src="static/WhatsApp Image 2024-07-15 at 8.59.35 PM (2).jpeg" alt="blog-image" />
+        </div>
+        <p class="description">
+          Botanicleaf handwash, newly introduced handwash with advance cleancing
+          agents and provides hydration for skin.
+        </p>
+        <div class="content">
+          <div class="blog-details">
+            <p class="tag"><span> </span></p>
+            <p></p>
+          </div>
+          <div class="about-author">
+            <!--<img src="./author.jpeg" alt="author">-->
+            <p><span> </span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog Item 3 -->
+      <div class="blogs-item">
+        <div class="blog-image">
+          <img src="static/WhatsApp Image 2024-07-15 at 8.59.35 PM.jpeg" alt="blog-image" />
+        </div>
+        <p class="description">
+          RoyalFern Moistarising Cream, body cream with advanced skin deaging
+          agents helps in providing glowing skin.
+        </p>
+        <div class="content">
+          <div class="blog-details">
+            <p class="tag"><span> </span></p>
+            <p></p>
+          </div>
+          <div class="about-author">
+            <!--<img src="./author.jpeg" alt="author">-->
+            <p><span> </span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog Item 4 -->
+      <div class="blogs-item">
+        <div class="blog-image">
+          <img src="static/WhatsApp Image 2024-07-15 at 8.59.36 PM (1).jpeg" alt="blog-image" />
+        </div>
+        <p class="description">
+          Laneige LipSleepingMask, provides with healthy glowing lips with
+          glossy finish which enhances the color tone.
+        </p>
+        <div class="content">
+          <div class="blog-details">
+            <p class="tag"><span> </span></p>
+            <p></p>
+          </div>
+          <div class="about-author">
+            <!--<img src="./author.jpeg" alt="author">-->
+            <p><span> </span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="scripts.js"></s>
+  </body>
+</html>
