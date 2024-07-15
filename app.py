@@ -2,9 +2,11 @@ from flask import Flask, request, redirect, render_template
 
 app = Flask(__name__)
 
+
 @app.route('/')
 def home():
     return render_template('itsmymantra.html')
+
 
 @app.route('/submit', methods=['POST'])
 def submit():
@@ -25,6 +27,7 @@ def submit():
     redirect_url = combinations.get((tone, body_type), '/')
 
     return redirect(redirect_url)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
