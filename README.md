@@ -7,5 +7,6 @@ In the hustle of experimenting, they often face disappointment when certain look
 Recognizing that every body is unique and deserves love, this feature allows users to submit their body shape and undertone details for personalized recommendations. 
 Our reccomendation model leverages data from top fashion magazines and style influencers to ensure that users receive the best advice tailored to their profiles. 
 With "It's My Mantra," finding trendy clothes that truly flatter becomes effortless and empowering!
-![image](https://github.com/user-attachments/assets/8bbec179-75f5-4d5a-9a38-f3a7e3e0b61b)
+![image](https://github.com/user-attachments/assets/cdf8c1b8-94a0-41a5-94b6-688951f837e9)
+
 
