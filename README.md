@@ -10,3 +10,10 @@ With "It's My Mantra," finding trendy clothes that truly flatter becomes effortl
 ![image](https://github.com/user-attachments/assets/cdf8c1b8-94a0-41a5-94b6-688951f837e9)
 
 
+
+https://github.com/user-attachments/assets/c0e725ee-9f11-4f7e-8cf2-d7b5c621883f
+
+
+
+https://github.com/user-attachments/assets/decbbfdc-7c7c-45b4-a1ed-69b44374ac69
+
