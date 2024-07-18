@@ -8,12 +8,14 @@ Recognizing that every body is unique and deserves love, this feature allows use
 Our reccomendation model leverages data from top fashion magazines and style influencers to ensure that users receive the best advice tailored to their profiles. 
 With "It's My Mantra," finding trendy clothes that truly flatter becomes effortless.
 
+**STYLES RECCOMENDATION VIA CNN BASED MODEL**
+**Tech Stack**: CNN, Model trained on RESTNET, Scikitlearn, Tensorflow
+
+https://github.com/user-attachments/assets/decbbfdc-7c7c-45b4-a1ed-69b44374ac69
+
 
 **WEBSITE**
 
 https://github.com/user-attachments/assets/c0e725ee-9f11-4f7e-8cf2-d7b5c621883f
 
-**STYLES RECCOMENDATION VIA CNN BASED MODEL**
-
-https://github.com/user-attachments/assets/decbbfdc-7c7c-45b4-a1ed-69b44374ac69
 
