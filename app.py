@@ -4,11 +4,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template('index.html')  # Assuming your home page is index.html
+    return render_template('itsmymantra.html')  # Assuming your home page is index.html
 
-@app.route('/itsmymantra')
-def itsmymantra():
-    return render_template('itsmymantra.html')
+# @app.route('/itsmymantra')
+# def itsmymantra():
+#     return render_template('itsmymantra.html')
 
 @app.route('/submit', methods=['POST'])
 def submit():
